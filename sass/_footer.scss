@@ -1,0 +1,44 @@
+.pie-pagina {
+    width: 100%;
+    background-color: #dcb3b7;
+    display: grid;
+    justify-items: end;
+
+    .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 35px 0px 5px 10px;
+    }
+
+    .box figure {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: stretch;
+        justify-items: stretch;
+        img {
+            width: 100px;
+        }
+    }
+
+    h2 h3 {
+        margin-bottom: 25px;
+        font-size: 20px;
+        p {
+            color: A4A09A;
+            margin-top: 10px;
+        }
+    }    
+
+    .red-social a {
+        display: inline;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        margin-right: 10px;
+        text-align: justify;
+    }
+
+}

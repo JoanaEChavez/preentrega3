@@ -1,0 +1,239 @@
+@import "generales";
+@import "footer";
+
+$rosa:#dcb3b7;
+$claro:#dec9c3;
+$gris:#A4A09A;
+
+@mixin sizes ($width, $heigth){
+    height: $heigth;
+    width: $width;
+}
+.fondo {
+    @include sizes (100%, 200px)
+}
+
+.color {
+    background-color: $rosa;
+}
+
+.img-nos {
+    display: grid;
+    grid-template-areas:
+        "difusor"
+        "minijabon";
+    align-items: center;
+    justify-items: center;
+    padding-bottom: 10px;
+}
+
+.difusor {
+    grid-area: difusor;
+    padding: 5%;
+}
+
+.mini-jabon {
+    grid-area: minijabon;
+    padding: 5%;
+}
+
+
+h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    margin-bottom: 5%;
+}
+
+.logo {
+    @include sizes (25%,25%)
+}
+
+.saber-mas {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 10px;
+}
+
+.titulos {
+    font-size: 15px;
+    color: black;
+}
+
+.descrip {
+    font-size: 10px;
+    color: $gris;
+}
+
+.nos {
+    padding: 10px;
+    border-radius: 5px solid gainsboro;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: gainsboro;
+}
+
+.mapa {
+    @include sizes (100%, 100%)
+
+}
+
+.contacto {
+    background-color: gainsboro;
+    margin-bottom: 1.5em;
+    display: grid;
+    gap: 20px;
+    text-align: center;
+    grid-template-areas:
+        "horario"
+        "tel"
+        "correo";
+}
+
+.video {
+    @include sizes (200px, 200px);
+    margin: 25px;
+}
+
+
+/*1er breackpoint*/
+@media (min-width: 500px) {
+
+
+    .fondo {
+        @include sizes (100%, 350px)
+        
+    }
+
+    .difusor .minijabon {
+        @include sizes (350px, 400px);
+        padding: 40px;
+    }
+
+
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+        align-items: center;
+        justify-items: center;
+        padding-top: 10px;
+    }
+
+    .titulos {
+        font-size: 20px;
+        color: black;
+    }
+
+    .descrip {
+        font-size: 13px;
+        color: $gris;
+    }
+}
+
+/*2do breackpoint*/
+
+@media (min-width:768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .img-nos {
+        grid-template-areas:
+            "difusor minijabon";
+    }
+
+    .nos {
+        color: black;
+        padding: 40px;
+        border-radius: 5px solid $claro;
+        margin: 10px;
+        text-align: center;
+        font-size: 15px;
+        background-color: $claro;
+    }
+
+    .pie-pagina .grupo-1 {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 45px 0px;
+        align-items: center;
+    }
+
+    .contacto {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "horario tel correo";
+        background-color: $gris;
+    }
+
+
+    .inicio {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        align-items: center;
+        justify-items: center;
+        margin-bottom: 5%;
+    }
+
+    .titulos {
+        font-size: 25px;
+        color: black;
+    }
+
+    .descrip {
+        font-size: 18px;
+        color: $gris;
+    }
+}
+.cuestionario{
+    padding: 20px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+.pregunta {
+    color: black;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.respuesta {
+    color: $gris;
+}
+
+.jabon {
+    @include sizes (300px, 300px);
+    padding: 25px;
+}
+.formulario{
+    padding: 10px;
+    margin: 5px;
+    background-color: $claro;
+}
+
+/*3er breackpoint*/
+
+@media (min-width: 994px){
+    h1{
+        font-size: 40px;
+        background-color: gainsboro;
+    }
+
+
+}

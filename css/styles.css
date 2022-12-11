@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62, 5%;
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.pie-pagina {
+  width: 100%;
+  background-color: #dcb3b7;
+  display: grid;
+  justify-items: end;
+}
+.pie-pagina .grupo-1 {
+  width: 90%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  padding: 35px 0px 5px 10px;
+}
+.pie-pagina .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: stretch;
+  justify-items: stretch;
+}
+.pie-pagina .box figure img {
+  width: 100px;
+}
+.pie-pagina h2 h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina h2 h3 p {
+  color: A4A09A;
+  margin-top: 10px;
+}
+.pie-pagina .red-social a {
+  display: inline;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+.fondo {
+  height: 200px;
+  width: 100%;
+}
+
+.color {
+  background-color: #dcb3b7;
+}
+
+.img-nos {
+  display: grid;
+  grid-template-areas: "difusor" "minijabon";
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 10px;
+}
+
+.difusor {
+  grid-area: difusor;
+  padding: 5%;
+}
+
+.mini-jabon {
+  grid-area: minijabon;
+  padding: 5%;
+}
+
+h1 {
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin-bottom: 5%;
+}
+
+.logo {
+  height: 25%;
+  width: 25%;
+}
+
+.saber-mas {
+  display: flex;
+  justify-content: center;
+}
+
+.inicio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+  padding-top: 10px;
+}
+
+.titulos {
+  font-size: 15px;
+  color: black;
+}
+
+.descrip {
+  font-size: 10px;
+  color: #A4A09A;
+}
+
+.nos {
+  padding: 10px;
+  border-radius: 5px solid gainsboro;
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  background-color: gainsboro;
+}
+
+.mapa {
+  height: 100%;
+  width: 100%;
+}
+
+.contacto {
+  background-color: gainsboro;
+  margin-bottom: 1.5em;
+  display: grid;
+  gap: 20px;
+  text-align: center;
+  grid-template-areas: "horario" "tel" "correo";
+}
+
+.video {
+  height: 200px;
+  width: 200px;
+  margin: 25px;
+}
+
+/*1er breackpoint*/
+@media (min-width: 500px) {
+  .fondo {
+    height: 350px;
+    width: 100%;
+  }
+  .difusor .minijabon {
+    height: 400px;
+    width: 350px;
+    padding: 40px;
+  }
+  .inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    padding-top: 10px;
+  }
+  .titulos {
+    font-size: 20px;
+    color: black;
+  }
+  .descrip {
+    font-size: 13px;
+    color: #A4A09A;
+  }
+}
+/*2do breackpoint*/
+@media (min-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  .img-nos {
+    grid-template-areas: "difusor minijabon";
+  }
+  .nos {
+    color: black;
+    padding: 40px;
+    border-radius: 5px solid #dec9c3;
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #dec9c3;
+  }
+  .pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
+    align-items: center;
+  }
+  .contacto {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "horario tel correo";
+    background-color: #A4A09A;
+  }
+  .inicio {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5%;
+  }
+  .titulos {
+    font-size: 25px;
+    color: black;
+  }
+  .descrip {
+    font-size: 18px;
+    color: #A4A09A;
+  }
+}
+.cuestionario {
+  padding: 20px;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+
+.pregunta {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.respuesta {
+  color: #A4A09A;
+}
+
+.jabon {
+  height: 300px;
+  width: 300px;
+  padding: 25px;
+}
+
+.formulario {
+  padding: 10px;
+  margin: 5px;
+  background-color: #dec9c3;
+}
+
+/*3er breackpoint*/
+@media (min-width: 994px) {
+  h1 {
+    font-size: 40px;
+    background-color: gainsboro;
+  }
+}/*# sourceMappingURL=styles.css.map */
