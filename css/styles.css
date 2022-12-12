@@ -113,7 +113,7 @@ h1 {
 
 .descrip {
   font-size: 10px;
-  color: #A4A09A;
+  color: black;
 }
 
 .nos {
@@ -170,7 +170,7 @@ h1 {
   }
   .descrip {
     font-size: 13px;
-    color: #A4A09A;
+    color: black;
   }
 }
 /*2do breackpoint*/
@@ -219,7 +219,6 @@ h1 {
   }
   .descrip {
     font-size: 18px;
-    color: #A4A09A;
   }
 }
 .cuestionario {
@@ -235,7 +234,7 @@ h1 {
 }
 
 .respuesta {
-  color: #A4A09A;
+  font-style: oblique;
 }
 
 .jabon {
